@@ -1,0 +1,12 @@
+<div *ngIf="user">
+  <h3>{{user.name}}</h3>
+  <p>Username: {{user.username}}</p>
+  <p>E-mail: {{user.email}}</p>
+  <p>Address: {{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, {{user.address.zipcode}} ({{user.address.geo.lat}} {{user.address.geo.lng}})</p>
+  <p>Phone number: {{user.phone}}</p>
+  <p>Website: <a [attr.href]="user.website" target="_blank">{{user.website}}</a></p>
+  <p>Company: {{user.company.name}} (<i>{{user.company.catchPhrase}}</i> specialized on <i>{{user.company.bs}}</i>)</p>
+  <div>
+    <button routerLink="/edit/{{user.id}}">Edit this user</button>
+  </div>
+</div>

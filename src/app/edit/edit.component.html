@@ -1,0 +1,88 @@
+<div *ngIf="user">
+  <h3>{{userForm.value.name}}</h3>
+  <p>Edit user's info</p>
+  <form [formGroup]="userForm">
+    <div>
+      <label for="name">Name:
+        <input type="text" formControlName="name" id="name" placeholder="Edit user's name">
+      </label>
+    </div>
+    <div>
+      <label for="name">Username:
+        <input type="text" formControlName="username" id="username" placeholder="Edit user's username">
+      </label>
+    </div>
+    <div>
+      <label for="name">E-mail:
+        <input type="email" formControlName="email" id="email" placeholder="Edit user's e-mail">
+      </label>
+    </div>
+    <div formGroupName="address">
+      <h5>Address</h5>
+      <div>
+        <label for="name">Street:
+          <input type="text" formControlName="street" id="street" placeholder="Edit user's street">
+        </label>
+      </div>
+      <div>
+        <label for="name">Suite:
+          <input type="text" formControlName="suite" id="suite" placeholder="Edit user's suite">
+        </label>
+      </div>
+      <div>
+        <label for="name">City:
+          <input type="text" formControlName="city" id="city" placeholder="Edit user's city">
+        </label>
+      </div>
+      <div>
+        <label for="name">Zip Code:
+          <input type="text" formControlName="zipcode" id="zipcode" placeholder="Edit user's zip code">
+        </label>
+      </div>
+      <div formGroupName="geo">
+        <div>
+          <label for="name">Latitude:
+            <input type="text" formControlName="lat" id="lat" placeholder="Edit user's latitude">
+          </label>
+        </div>
+        <div>
+          <label for="name">Longitute:
+            <input type="text" formControlName="lng" id="lng" placeholder="Edit user's lng">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="name">Phone:
+        <input type="tel" formControlName="phone" id="phone" placeholder="Edit user's phone">
+      </label>
+    </div>
+    <div>
+      <label for="name">Website:
+        <input type="url" formControlName="website" id="website" placeholder="Edit user's website">
+      </label>
+    </div>
+    <div formGroupName="company">
+      <h5>Company</h5>
+      <div>
+        <label for="name">Company:
+          <input type="url" formControlName="name" id="name" placeholder="Edit user's company name">
+        </label>
+      </div>
+      <div>
+        <label for="name">Company:
+          <input type="url" formControlName="catchPhrase" id="catch-phrase" placeholder="Edit user's company catch phrase">
+        </label>
+      </div>
+      <div>
+        <label for="name">BS:
+          <input type="url" formControlName="bs" id="bs" placeholder="Edit user's company bs">
+        </label>
+      </div>
+    </div>
+  </form>
+  <div>
+    <button (click)="goBack()">Back</button>
+    <button (click)="save()">Save</button>
+  </div>
+</div>

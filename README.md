@@ -26,3 +26,16 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Please complete this exercise and either provide us a zip file of the project or post it on a public repository such as github.
+
+Use Angular4.
+Set up the application to use router to provide 3 routes (list/view/edit).
+Have each route use a dedicated component to bind data to the view file. 
+Call a service to retrieve and pass back data from a REST endpoint. Use these sample endpoints:
+1) http://jsonplaceholder.typicode.com/users - list of users.
+2) http://jsonplaceholder.typicode.com/users/1 - specific user’s data
+Display data from the endpoint on the view (Resolves should be used)
+Create a list view with links to a view that shows individual records
+The individual record view should allow the ability to edit that information in a form(Reactive Forms are preferable) and send it back to an endpoint with some basic client validation.
+Feel free to use Angular CLI.
