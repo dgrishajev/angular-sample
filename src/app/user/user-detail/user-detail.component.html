@@ -7,6 +7,7 @@
   <p>Website: <a [attr.href]="user.website" target="_blank">{{user.website}}</a></p>
   <p>Company: {{user.company.name}} (<i>{{user.company.catchPhrase}}</i> specialized on <i>{{user.company.bs}}</i>)</p>
   <div>
-    <button routerLink="/edit/{{user.id}}">Edit this user</button>
+    <button routerLink="edit">Edit this user</button>
+    <button (click)="goBack()">Back</button>
   </div>
 </div>

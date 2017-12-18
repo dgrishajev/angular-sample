@@ -4,11 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 import { User } from './../user.interface';
 
 @Component({
-  selector: 'app-view',
-  templateUrl: './view.component.html',
-  styleUrls: ['./view.component.scss']
+  selector: 'app-user-detail',
+  templateUrl: './user-detail.component.html',
+  styleUrls: ['./user-detail.component.scss']
 })
-export class ViewComponent implements OnInit {
+export class UserDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,

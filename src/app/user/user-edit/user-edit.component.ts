@@ -6,11 +6,11 @@ import { UserService } from './../user.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.scss']
+  selector: 'app-user-edit',
+  templateUrl: './user-edit.component.html',
+  styleUrls: ['./user-edit.component.scss']
 })
-export class EditComponent implements OnInit {
+export class UserEditComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
